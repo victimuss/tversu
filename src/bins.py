@@ -1,5 +1,4 @@
-elem = int(input())
-A = list(map(int, input().split()))
+
 def binSearch(A, elem):
     if not A:
         return []
