@@ -18,4 +18,3 @@ def binSearch(A, elem):
         else:
             return [current] + helper(mid + 1, right)
     return helper(0, len(A) - 1)
-print(" ".join((map(str,binSearch(A,elem)))))
