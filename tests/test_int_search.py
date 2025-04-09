@@ -13,16 +13,16 @@ class TestIntSearch(unittest.TestCase):
 
     def test_not_in_array(self):
         A = [2, 4, 6, 8, 10]
-        self.assertEqual(interpolation_search(A,5),[6,4])
+        self.assertEqual(interpolation_search(A,5),[4])
     
-    def critical_issues(self):
+    def test_critical_issues(self):
         A = []
         self.assertEqual(interpolation_search(A,8),[])
 
-    def one_element(self):
+    def test_one_element(self):
         A = [7]
         self.assertEqual(interpolation_search(A,7),[7])
     
-    def incorrent(self):
+    def test_incorrent(self):
         A = [1,2,3,1000]
-        self.assertEqual(interpolation_search(A,4),[3,2])
+        self.assertEqual(interpolation_search(A,4),[1,2,3])
