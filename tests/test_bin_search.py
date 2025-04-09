@@ -1,5 +1,5 @@
 import unittest
-from bins import binSearch
+from src.bins import binSearch
 
 class TestBinSearch(unittest.TestCase):
 
